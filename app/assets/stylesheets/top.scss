@@ -176,3 +176,31 @@ body {
   font-size: 14px
 }
 
+.top-area {
+  position: relative;
+  .top-img {
+    position: absolute;
+  }
+  .top-txt {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-left: -216px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
+
+.btn {
+  background: #FFFFFF;
+  border: 1px solid #DDD;
+  border-radius: 20px;
+  width: 200px;
+  padding: 10px 0;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+}
