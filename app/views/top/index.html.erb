@@ -9,13 +9,18 @@
     <nav class="menu">
       <ul>
         <li><%= link_to "Top", root_path %></li>
-        <li><a href="#">お問い合わせ</a></li>
+        <li><%= link_to "お問い合わせ", inquiry_path %> </li>
       </ul>
     </nav>
   </div>
 </div>
 
-<div class="box3">
+<div class="box3 top-area">
+  <div class="top-txt">
+    <h2>すべての人にテクノロジーという武器を</h2>
+    <p>dive into code</p>
+    <%= link_to 'DIVE NOW', company_show_path, class: 'btn' %>
+  </div>
   <%= image_tag("header.jpg", class: "topimg") %>
 </div>
 
