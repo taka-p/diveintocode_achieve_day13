@@ -14,18 +14,24 @@
         </div>
     <% end %>
 
+    <%
+      value_name = @inquiry.name || ''
+      value_email = @inquiry.email || ''
+      value_message = @inquiry.message || ''
+    %>
+
     <table class="table">
       <tr>
         <th>名前<span class="text-danger">（必須）</span></th>
-        <td><%= f.text_field :name %></td>
+        <td><%= f.text_field :name, value: value_name %></td>
       </tr>
       <tr>
         <th>メールアドレス<span class="text-danger">（必須）</span></th>
-        <td><%= f.text_field :email %></td>
+        <td><%= f.text_field :email, value: value_email %></td>
       </tr>
       <tr>
         <th>お問い合わせ内容</th>
-        <td><%= f.text_area :message %></td>
+        <td><%= f.text_area :message, value: value_message %></td>
       </tr>
     </table>
     <%= f.submit '確認', class: 'btn btn-primary' %>

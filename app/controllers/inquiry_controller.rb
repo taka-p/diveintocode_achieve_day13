@@ -1,7 +1,12 @@
 class InquiryController < ApplicationController
   def index
     # 入力画面を表示
-    @inquiry = Inquiry.new
+    if params[:inquiry]
+      @inquiry = Inquiry.new(inquiry_params)
+    else
+      @inquiry = Inquiry.new
+    end
+
     render :action => 'index'
   end
 
@@ -19,7 +24,7 @@ class InquiryController < ApplicationController
 
   def thanks
     # メール送信
-    @inquiry = Inquiry.new(inquiry_params)
+    @inquiry = Inquiry.create(inquiry_params)
 
     # メーラーは実装しない
     # InquiryMailer.received_email(@inquiry).deliver
