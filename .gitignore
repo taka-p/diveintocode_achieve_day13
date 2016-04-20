@@ -26,6 +26,7 @@ capybara-*.html
 **.orig
 rerun.txt
 pickle-email-*.html
+.ruby-version
 
 /log/*
 !/log/.keep

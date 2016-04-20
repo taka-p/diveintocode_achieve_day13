@@ -1,0 +1,17 @@
+ul {
+  list-style: none;
+}
+
+.inquiry-wrap {
+  padding: 10px;
+  text-align: center;
+  .table {
+    margin: 0 auto 15px;
+  }
+  form {
+    margin-bottom: 15px;
+  }
+  .alert {
+    color: #FF0000;
+  }
+}
